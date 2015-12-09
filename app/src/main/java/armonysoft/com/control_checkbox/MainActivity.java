@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     //se crean los objetos
-    public TextView tv3;
-    public EditText et1,et2;
-    public CheckBox checkBox, checkBox2;
+    private TextView tv3;
+    private EditText et1,et2;
+    private CheckBox checkBox, checkBox2;
 
 
     @Override
@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     //se inician los objetos
-    TextView tv3 =(TextView)findViewById(R.id.tv3);
-    EditText et1 =(EditText)findViewById(R.id.et1);
-    EditText et2 =(EditText)findViewById(R.id.et2);
-    CheckBox checkBox=(CheckBox)findViewById(R.id.checkBox);
-    CheckBox checkBox2=(CheckBox)findViewById(R.id.checkBox2);
+    tv3 =(TextView)findViewById(R.id.tv3);
+    et1 =(EditText)findViewById(R.id.et1);
+    et2 =(EditText)findViewById(R.id.et2);
+    checkBox=(CheckBox)findViewById(R.id.checkBox);
+    checkBox2=(CheckBox)findViewById(R.id.checkBox2);
 
 
     }
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if(checkBox2.isChecked()){
             int resta = nro1 - nro2;
             //en caso de que los dos checkbox esten seleccionados
-            resu= resu + "La resta es: " + resta;
+            resu= resu + " La resta es: " + resta;
         }
 
         tv3.setText(resu);
